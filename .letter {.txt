@@ -1,0 +1,24 @@
+.letter {
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border: 2px solid #ff6666;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.letter-inner {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+.letter.open .letter-inner {
+    transform: translateY(0);
+}
